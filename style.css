@@ -1,0 +1,209 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  padding-top: 70px; 
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  z-index: 1000;
+  transition: all 0.4s ease;
+
+  background-color: rgba(15, 15, 15, 0.2); /* Semi-transparent */
+  backdrop-filter: saturate(180%) blur(0px); /* Needs this combo */
+  -webkit-backdrop-filter: saturate(180%) blur(0px);
+}
+
+.navbar.scrolled {
+  padding: 0.75rem 2rem;
+  background-color: rgba(15, 15, 15, 0.75); /* darker when scrolled */
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 10px rgba(58, 139, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  color: #3a8bff;
+  font-weight: 600;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #3a8bff;
+}
+
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #1a1a1a, #0f0f0f);
+  padding: 2rem;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero h1 span {
+  background: linear-gradient(90deg, #3a8bff, #b0b3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.hero p {
+  margin-top: 1rem;
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+
+.profile-image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 3px solid #3a8bff;
+  box-shadow: 0 0 15px rgba(58, 139, 255, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 10px rgba(58, 139, 255, 0.5),
+    0 0 20px rgba(176, 179, 184, 0.4),
+    0 0 40px rgba(58, 139, 255, 0.6);
+}
+
+
+.projects {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  background-color: #1a1a1a;
+  border-radius: 1px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project-card img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  display: block;
+  object-fit: contain;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+.project-card img {
+  width: 100%;
+  display: block;
+}
+.project-info {
+  padding: 1rem;
+}
+.project-info h3 {
+  margin-bottom: 0.5rem;
+  color: #3a8bff;
+}
+.project-info p {
+  color: #aaa;
+}
+
+
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #0f0f0f;
+  color: #ccc;
+}
+.contact a {
+  color: #3a8bff;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .navbar,
+  .navbar.scrolled {
+    background-color: rgba(15, 15, 15, 0.95) !important;
+  }
+}
+#about {
+  padding: 5rem 2rem;
+  background: #121212;
+  color: #ddd;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #3a8bff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #aaa;
+}
+
+ footer {
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.875rem;
+      color: white;
+      border-top: 1px solid var(--subtle);
+    }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Shivek</title>
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html"><div class="logo">Shivek</div></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Me Section -->
+  <section class="about-section">
+    <div class="about-container">
+      <img src="img.jpg" alt="Profile" class="about-img" />
+      <div class="about-text">
+        <h1>Hi I'm <span>Shivek Chauhan</span></h1>
+        <p>
+          I’m Shivek Chauhan — a passionate digital marketing enthusiast currently pursuing an MBA in Marketing & International Business. I don’t just study marketing — I do it.
+From building websites like KKCE Builders and Nandi Travel to crafting content for real events like the YUCA CSR initiative, I’ve turned ideas into results. I’m skilled in Canva, content creation, basic A/B analysis, and market research — with a growing interest in prompt engineering and its creative use in marketing workflows.
+
+I’ve also published a research paper on CSR and rural development, strengthening my understanding of how strategy, branding, and social impact connect.
+
+Whether it's designing a brand’s digital face, writing impactful content, exploring user behavior, or running experiments — I bring creativity, curiosity, and the energy to keep learning and delivering.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section class="media-section" id="media">
+    <h2>My Work</h2>
+    <div class="media-grid">
+      <!-- Image Preview -->
+      <div class="media-card">
+        <img src="2.jpg" alt="Preview 1" class="media-preview" />
+        <p>CERTIFICATE OF PUBLICATION BY IJSREM</p>
+      </div>
+
+            <!-- PDF Buttons -->
+      <div class="media-card full-width">
+        <a href="1.pdf" target="_blank" class="pdf-button">DIGITAL MARKETING COURSE CERTIFICATE FROM IIM BANGALORE</a>
+        <a href="2.pdf" target="_blank" class="pdf-button">PROOF OF PREVIOUS INTERNSHIP</a>
+        <a href="3.pdf" target="_blank" class="pdf-button">META AI AND AI TOOLS CERTIFICATE</a>
+        <a href="5.pdf" target="_blank" class="pdf-button">IJSREM PUBLISHED RESEARCH PAPER</a>
+        <a href="Nandi traveller (Website layout).pdf" target="_blank" class="pdf-button">CONTENT CREATION PROJECT 1</a>
+        <a href="Upscaling Investment.pdf" target="_blank" class="pdf-button">CONTENT CREATION PROJECT 2</a>
+        <a href="Our Package revised.pdf" target="_blank" class="pdf-button">CONTENT CREATION PROJECT 3</a>
+        <a href="7 Phases of Digital Marketing.pdf" target="_blank" class="pdf-button">CONTENT CREATION PROJECT 4</a>
+        <a href="Digital Marketing as a career..pdf" target="_blank" class="pdf-button">CONTENT CREATION PROJECT 5/a>
+        <a href="Gig Economy.pdf" target="_blank" class="pdf-button">CONTENT CREATION PROJECT 6</a>
+        <a href="indian football rnd.pdf" target="_blank" class="pdf-button">RND ON INDIAN FOOTBALL</a>
+      </div>
+    </div>
+  </section>
+
+   <!-- Contact -->
+  <footer class="footer">
+    <h3>Contact Me</h3>
+    <p>Email: <a href="mailto:hello@codenmuse.dev">shivekchauhan20@gmail.com</a></p>
+  </footer>
+
+  <script>
+    // Scroll dynamic navbar
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
